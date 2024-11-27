@@ -50,8 +50,8 @@ export default function SurveyList() {
         strokeLinecap="square"
         size={["", 5]}
       />
-      {isSubmit &&
-        (!isLoading ? (
+      {isSubmit ? (
+        !isLoading ? (
           isError ? (
             <Flex className="section" align="center" justify="center">
               <Result
@@ -86,23 +86,25 @@ export default function SurveyList() {
           <Flex className="section" align="center" justify="center">
             <Spin indicator={<LoadingOutlined spin />} size="large" />
           </Flex>
-        ))}
-      {surveyData.map(
-        (item, i) =>
-          selected === i && (
-            <SurveyItem
-              key={i}
-              id={i}
-              title={item.question}
-              answers={item.answers}
-              isMultiple={item.isMultiple}
-              customAnswer={item.customAnswer}
-              isFinal={surveyData.length - 1 === i}
-              onPrev={handlePrev}
-              onNext={handleNext}
-              onSubmit={handleSubmit}
-            />
-          )
+        )
+      ) : (
+        surveyData.map(
+          (item, i) =>
+            selected === i && (
+              <SurveyItem
+                key={i}
+                id={i}
+                title={item.question}
+                answers={item.answers}
+                isMultiple={item.isMultiple}
+                customAnswer={item.customAnswer}
+                isFinal={surveyData.length - 1 === i}
+                onPrev={handlePrev}
+                onNext={handleNext}
+                onSubmit={handleSubmit}
+              />
+            )
+        )
       )}
     </>
   );
