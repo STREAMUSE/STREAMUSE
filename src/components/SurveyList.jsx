@@ -51,7 +51,7 @@ export default function SurveyList() {
         size={["", 5]}
       />
       {isSubmit &&
-        (isLoading == true ? (
+        (!isLoading ? (
           isError ? (
             <Flex className="section" align="center" justify="center">
               <Result
@@ -83,7 +83,7 @@ export default function SurveyList() {
             </Flex>
           )
         ) : (
-          <Flex align="center" justify="center">
+          <Flex className="section" align="center" justify="center">
             <Spin indicator={<LoadingOutlined spin />} size="large" />
           </Flex>
         ))}
