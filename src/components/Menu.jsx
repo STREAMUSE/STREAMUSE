@@ -23,7 +23,7 @@ export default function Menu({ isShow, setIsShow }) {
               Почему мы?
             </Button>
             <Button type="link" size="small">
-              Road map
+              Roadmap
             </Button>
             <Button type="link" size="small">
               О нас
