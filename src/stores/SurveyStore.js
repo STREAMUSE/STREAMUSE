@@ -23,7 +23,7 @@ export const useSurveyStore = create((set, get) => ({
     try {
       await api.post("submission", request);
     } catch (error) {
-      set({ error: true });
+      set({ isError: true });
       console.log(error);
     } finally {
       set({ isLoading: false });
