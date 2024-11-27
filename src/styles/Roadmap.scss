@@ -1,0 +1,17 @@
+@use "var.scss";
+
+.line {
+  background: var.$primaryColor;
+
+  &-h {
+    @extend .line;
+    width: 100%;
+    height: 2px;
+  }
+
+  &-v {
+    @extend .line;
+    width: 2px;
+    height: 150px;
+  }
+}

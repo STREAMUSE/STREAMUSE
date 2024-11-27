@@ -1,0 +1,35 @@
+@use "var.scss";
+
+header {
+  position: fixed;
+  padding: 15px 15px;
+  width: 100%;
+  background: var.$bgColor;
+  z-index: 10;
+}
+
+.visible {
+  top: 0;
+  transition: top 0.3s ease-out;
+}
+
+.hidden {
+  top: -80px;
+  transition: top 0.3s ease-out;
+}
+
+.desktop-nav {
+  display: inherit;
+
+  @media (max-width: 680px) {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  display: inherit;
+
+  @media (min-width: 680px) {
+    display: none;
+  }
+}

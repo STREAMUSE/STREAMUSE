@@ -1,0 +1,27 @@
+.progress {
+  position: absolute;
+  display: flex;
+}
+
+.survey {
+  overflow-x: hidden;
+}
+
+.title {
+  padding: 19px 19px 0 19px;
+  text-align: center;
+}
+
+.answers {
+  padding: 0 24px;
+}
+
+.custom-answer {
+  width: 100vw;
+  padding: 0 15%;
+}
+
+.btn-container {
+  padding: 19px;
+  width: 60%;
+}

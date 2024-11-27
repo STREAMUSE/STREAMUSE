@@ -1,0 +1,14 @@
+@use "var.scss";
+
+.roadmap-item {
+  position: relative;
+
+  img {
+    position: absolute;
+  }
+
+  &-title {
+    position: relative;
+    margin-left: 144px;
+  }
+}
