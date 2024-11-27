@@ -131,7 +131,7 @@ export default function SurveyItem({
           <Flex className="custom-answer" align="center" justify="center">
             <Input.TextArea
               rows={8}
-              placeholder="..."
+              placeholder="В бесплатной версии мне бы очень хотелось..."
               value={customValue}
               onChange={(e) => setCustomValue(e.target.value)}
             />
