@@ -1,56 +1,56 @@
 @use "var.scss";
 
 * {
-	margin: 0;
-	padding: 0;
-	scrollbar-width: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: 0;
+  box-sizing: border-box;
 
-	&::-webkit-scrollbar {
-		width: 0;
-	}
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 body {
-	background: var.$bgColor;
+  background: var.$bgColor;
 }
 
 .block {
-	height: 100%;
+  height: 100%;
 }
 
 .section {
-	width: 100dvw;
-	height: 100dvh;
+  width: 100dvw;
+  height: 100dvh;
 }
 
 .parallax {
-	position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-gradient {
-	border-width: 0;
+  border-width: 0;
 
-	> span {
-		position: relative;
-	}
+  > span {
+    position: relative;
+  }
 
-	&::before {
-		content: "";
-		position: absolute;
-		inset: 0;
-		opacity: 1;
-		transition: all 0.3s;
-		border-radius: inherit;
-		background: linear-gradient(
-			100deg,
-			var.$primaryColor -17.87%,
-			var.$accentColor 138.95%
-		);
-	}
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    transition: all 0.3s;
+    border-radius: inherit;
+    background: linear-gradient(
+      100deg,
+      var.$primaryColor -17.87%,
+      var.$accentColor 138.95%
+    );
+  }
 
-	&:hover::before {
-		opacity: 0;
-	}
+  &:hover::before {
+    opacity: 0;
+  }
 }

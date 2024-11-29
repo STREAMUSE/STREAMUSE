@@ -59,12 +59,14 @@ export default function SurveyList() {
                 status="error"
                 title="Что то пошло не так"
                 extra={[
-                  <Button key="Home" href="/">
-                    На главную
-                  </Button>,
-                  <Button key="Try" type="primary" onClick={handleSubmit}>
-                    Повторить
-                  </Button>,
+                  <Flex key="flex" gap={40}>
+                    <Button key="Home" href="/">
+                      На главную
+                    </Button>
+                    <Button key="Try" type="primary" onClick={handleSubmit}>
+                      Повторить
+                    </Button>
+                  </Flex>,
                 ]}
               />
             </Flex>

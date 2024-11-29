@@ -2,9 +2,9 @@ import { Typography, Radio, Button, Flex, Space, Input, Checkbox } from "antd";
 import { useState } from "react";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
+import { useSurveyStore } from "../stores/SurveyStore";
 import PropTypes from "prop-types";
 import gsap from "gsap";
-import { useSurveyStore } from "../stores/SurveyStore";
 
 export default function SurveyItem({
   id,
@@ -127,17 +127,17 @@ export default function SurveyItem({
               ))}
             </Space>
           ))}
-        {customAnswer !== undefined && (
-          <Flex className="custom-answer" align="center" justify="center">
-            <Input.TextArea
-              rows={8}
-              placeholder="В бесплатной версии мне бы очень хотелось..."
-              value={customValue}
-              onChange={(e) => setCustomValue(e.target.value)}
-            />
-          </Flex>
-        )}
       </Radio.Group>
+      {customAnswer !== undefined && multiple.length === 0 && (
+        <Flex className="custom-answer" align="center" justify="center">
+          <Input.TextArea
+            rows={8}
+            placeholder="В бесплатной версии мне бы очень хотелось..."
+            value={customValue}
+            onChange={(e) => setCustomValue(e.target.value)}
+          />
+        </Flex>
+      )}
       <Flex className="btn-container" align="center" gap={100} justify="center">
         {id !== 0 && <Button onClick={() => handleClick(onPrev)}>Назад</Button>}
         {isFinal ? (

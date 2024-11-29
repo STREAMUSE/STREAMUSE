@@ -17,6 +17,7 @@
 }
 
 .custom-answer {
+  transition: opacity 0.3s, visibility 0.3s;
   width: 100vw;
   padding: 0 15%;
 }

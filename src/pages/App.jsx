@@ -34,7 +34,7 @@ export default function App() {
             },
           }}
         >
-          <Typography.Title>STREAMUSE</Typography.Title>
+          <Typography.Title style={{ opacity: 1 }}>STREAMUSE</Typography.Title>
         </ConfigProvider>
         <ConfigProvider
           theme={{
