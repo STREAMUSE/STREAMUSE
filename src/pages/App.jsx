@@ -37,7 +37,7 @@ export default function App() {
           <Typography.Title
             style={{
               opacity: 1,
-              fontSize: "3em",
+              fontSize: "9vmin",
             }}
           >
             STREAMUSE
