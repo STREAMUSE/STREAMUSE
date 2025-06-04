@@ -34,9 +34,16 @@ export default function App() {
             },
           }}
         >
-          <Typography.Title className="custom-title">
-            STREAMUSE
-          </Typography.Title>
+          <div className="desktop-title">
+            <Typography.Title style={{ opacity: 1 }}>
+              STREAMUSE
+            </Typography.Title>
+          </div>
+          <div className="mobile-title">
+            <Typography.Title style={{ opacity: 1, fontSize: "42px" }}>
+              STREAMUSE
+            </Typography.Title>
+          </div>
         </ConfigProvider>
         <ConfigProvider
           theme={{
