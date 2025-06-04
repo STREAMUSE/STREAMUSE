@@ -11,3 +11,11 @@
   background: var.$primaryColor;
   filter: blur(400px) opacity(0.8);
 }
+
+.custom-title .ant-typography {
+  opacity: 1;
+
+  @media (max-width: 680px) {
+    font-size: 42px;
+  }
+}

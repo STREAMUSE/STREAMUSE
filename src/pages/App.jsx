@@ -34,12 +34,7 @@ export default function App() {
             },
           }}
         >
-          <Typography.Title
-            style={{
-              opacity: 1,
-              fontSize: "9vmin",
-            }}
-          >
+          <Typography.Title className="custom-title">
             STREAMUSE
           </Typography.Title>
         </ConfigProvider>
