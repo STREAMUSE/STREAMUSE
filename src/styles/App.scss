@@ -2,14 +2,14 @@
 
 .circle {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
   top: 40%;
   left: 0;
   border-radius: 100%;
   transform: translate(-50%, -50%);
   background: var.$primaryColor;
-  filter: blur(400px) opacity(0.8);
+  filter: blur(100vw) opacity(0.8);
 }
 
 .desktop-title {
